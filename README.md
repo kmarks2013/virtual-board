@@ -46,4 +46,4 @@ To test this application locally, first clone the master branch onto your machin
 
 ## Demo
 
-View our video demo [here](https://youtu.be/WmptC7f5CX4)
+View our video demo [here](https://www.youtube.com/watch?v=JM6hJIj99_c)
