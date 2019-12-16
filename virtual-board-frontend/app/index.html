@@ -3,17 +3,19 @@
     <head>
         <meta charset='utf-8'>
         <title>Virtual Board</title>
-        <script defer type='text/javascript' src='src/SideBar.js'></script>
-        <script defer type='text/javascript' src='src/WhiteBoard.js'></script>
-        <script defer type='text/javascript' src='src/ToDo.js'></script>
-        <script defer type='text/javascript' src='src/Thought.js'></script>
-        <script defer type='text/javascript' src='src/Quote.js'></script>
-        <script defer type='text/javascript' src='src/Canvas.js'></script>
-        <script defer type='text/javascript' src='src/DoodleDot.js'></script>
-        <script defer type='text/javascript' src='src/User.js'></script>
-        <script defer type='text/javascript' src='src/UserForm.js'></script>
-        <script defer type='text/javascript' src='src/UserAdapter.js'></script>
-        <script defer type='text/javascript' src='src/index.js'></script>
+        <script defer src="/__/firebase/7.1.0/firebase-app.js"></script>
+        <script defer src="/__/firebase/init.js"></script>
+        <script defer type='text/javascript' src='SideBar.js'></script>
+        <script defer type='text/javascript' src='WhiteBoard.js'></script>
+        <script defer type='text/javascript' src='ToDo.js'></script>
+        <script defer type='text/javascript' src='Thought.js'></script>
+        <script defer type='text/javascript' src='Quote.js'></script>
+        <script defer type='text/javascript' src='Canvas.js'></script>
+        <script defer type='text/javascript' src='DoodleDot.js'></script>
+        <script defer type='text/javascript' src='User.js'></script>
+        <script defer type='text/javascript' src='UserForm.js'></script>
+        <script defer type='text/javascript' src='UserAdapter.js'></script>
+        <script defer type='text/javascript' src='index.js'></script>
         <link rel= 'stylesheet' href='main.css'>
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     </head>
@@ -25,7 +27,7 @@
             <div id='side-bar'></div>
             <div id='wb-container'>
                 <div id='wb-title'></div>
-                <div id='white-board'>  
+                <div id='white-board'>
                     <div id='to-dos' class="wb-section" >
                         <!-- <h4>to-do list</h4> -->
                         <ul id='to-do-list' class='list'></ul>

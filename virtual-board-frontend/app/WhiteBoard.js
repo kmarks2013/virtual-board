@@ -38,7 +38,17 @@ class WhiteBoard {
       titleForm.addEventListener('submit', e => {
         e.preventDefault()
         let newTitle = titleInput.value
-        fetch(`https://virtual-board-backend.herokuapp.com/users/${this.userId}/whiteboards/${this.id}`, {
+        // fetch(`https://virtual-board-backend.herokuapp.com/users/${this.userId}/whiteboards/${this.id}`, {
+        //   method: "PATCH",
+        //   headers: {
+        //     'Content-Type': 'application/json',
+        //     Accept: 'application/json'
+        //   },
+        //   body: JSON.stringify({
+        //     'title': newTitle
+        //   })
+        // })
+        fetch(`http://localhost:3000/users/${this.userId}/whiteboards/${this.id}`, {
           method: "PATCH",
           headers: {
             'Content-Type': 'application/json',
@@ -102,7 +112,17 @@ class WhiteBoard {
         e.preventDefault();
 
         let content = e.target.content.value
-        fetch(`https://virtual-board-backend.herokuapp.com/users/${this.userId}/whiteboards/${this.id}/to_dos`, {
+        // fetch(`https://virtual-board-backend.herokuapp.com/users/${this.userId}/whiteboards/${this.id}/to_dos`, {
+        //   method: 'POST',
+        //   headers: {
+        //     'Content-Type': 'application/json',
+        //     Accept: 'application/json'
+        //   },
+        //   body: JSON.stringify({
+        //     content: content
+        //   })
+        // })
+        fetch(`http://localhost:3000/users/${this.userId}/whiteboards/${this.id}/to_dos`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -168,7 +188,17 @@ class WhiteBoard {
         e.preventDefault();
 
         let content = e.target.content.value
-        fetch(`https://virtual-board-backend.herokuapp.com/users/${this.userId}/whiteboards/${this.id}/quotes`, {
+        // fetch(`https://virtual-board-backend.herokuapp.com/users/${this.userId}/whiteboards/${this.id}/quotes`, {
+        //   method: 'POST',
+        //   headers: {
+        //     'Content-Type': 'application/json',
+        //     Accept: 'application/json'
+        //   },
+        //   body: JSON.stringify({
+        //     content: content
+        //   })
+        // })
+        fetch(`http://localhost:3000/users/${this.userId}/whiteboards/${this.id}/quotes`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -235,7 +265,17 @@ class WhiteBoard {
         e.preventDefault();
 
         let content = e.target.content.value
-        fetch(`https://virtual-board-backend.herokuapp.com/users/${this.userId}/whiteboards/${this.id}/thoughts`, {
+        // fetch(`https://virtual-board-backend.herokuapp.com/users/${this.userId}/whiteboards/${this.id}/thoughts`, {
+        //   method: 'POST',
+        //   headers: {
+        //     'Content-Type': 'application/json',
+        //     Accept: 'application/json'
+        //   },
+        //   body: JSON.stringify({
+        //     content: content
+        //   })
+        // })
+        fetch(`http://localhost:3000/users/${this.userId}/whiteboards/${this.id}/thoughts`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
